@@ -1,0 +1,41 @@
+<div>
+  <style>
+    .popup-wrapper, 
+    iframe {
+      position: fixed;
+      height: 100vh;
+      width: 100%;
+      top: 0; 
+      opacity: 0;
+      transition: all 1s;
+      pointer-events: none;
+      visibility: hidden;
+      display: flex;
+    }
+
+    .popup {
+      width: 100%;
+      background-color: rgba(10,100,150,0.9);
+      color: white;
+      text-align: center;
+    }
+
+    iframe {
+      border: none;
+    }
+
+    .active {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: all;
+    }
+  </style>
+
+  <div class="popup-wrapper">
+    <div class="popup">
+      <h1>I am a popup</h1>
+      <button>Start</button>
+    </div>
+  </div>
+  <iframe></iframe>
+</div>
