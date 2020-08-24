@@ -3,14 +3,14 @@ const path = require("path");
 const Dotenv = require('dotenv-webpack');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
-const mode = process.env.NODE_ENV || 'production';
+const mode = 'production';
 
 module.exports = {
   context: __dirname,
   entry: './index.js',
   output: {
-    path: path.join(__dirname, 'dist'),
-    filename: "index.js",
+    path: path.join(__dirname, '/'),
+    filename: "bundle.js",
   },
   plugins: [
     new HtmlWebpackPlugin({
